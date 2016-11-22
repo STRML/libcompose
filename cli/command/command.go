@@ -211,7 +211,7 @@ func LogsCommand(factory app.ProjectFactory) cli.Command {
 		Action: app.WithProject(factory, app.ProjectLog),
 		Flags: []cli.Flag{
 			cli.BoolFlag{
-				Name:  "follow",
+				Name:  "follow,f",
 				Usage: "Follow log output.",
 			},
 		},
